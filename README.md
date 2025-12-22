@@ -24,17 +24,3 @@ API Endpoints
         Rule: This operation is idempotent (calling it multiple times gives the same result).
   3. Get Course Progress - GET /users/{userId}/courses/{courseId}/progress - Eg: http://localhost:8080/users/1/courses/101/progress
         Returns: Total lessons, Completed lessons, Progress percentage
-
-
-
-DSA Problem Explanation:
-Problem - Count the number of unique integers in a list.
-Approach - 1. Used a HashSet to store unique elements.
-          2. The size of the set gives the number of unique elements.
-Time Complexity: O(n)
-Space Complexity: O(n)
-
-Design Assumptions - 1. Data is stored in-memory using Java collections (no database).
-                    2. Enrollment data is not persisted after server restart.
-                    3. No authentication layer is implemented.
-                    4. This project is for demonstration and assessment purposes on
